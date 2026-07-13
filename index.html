@@ -15,13 +15,34 @@
             <div class="turn"></div>
             <div class="utility-btns">
                 <button class="set-names utility">Set names</button>
+                <dialog class="set-names-dialog">
+                <h3>Enter Player Names</h3>
+                <form id="add-players" action="">
+                    <p class="form-item">
+                        <label for="One">Player 1</label>
+                        <input type="text" name="one" required>
+                    </p>
+                    <p class="form-item">
+                        <label for="Two">Player 2</label>
+                        <input type="text" name="two" required>
+                    </p>
+                </form>
+                <div class="form-btn">
+                        <button type="submit" form="add-players">Add</button>
+                        <button id="close">Close</button>
+                    </div>
+            </dialog>
                 <button class="undo utility">Undo</button>
-                <button class="start-over utility">Start over</button>
+                <button class="restart utility">Restart</button>
             </div>
         </div>
         <div class="grid-container main-element">
             <div class="grid"></div>
         </div>
+        <dialog class="winner">
+            <div class="winner-text"></div>
+            <button class="dialog-restart">Restart</button>
+        </dialog>
     </div>
 </body>
 </html>
