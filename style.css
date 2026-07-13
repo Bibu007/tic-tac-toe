@@ -1,1 +1,82 @@
-h
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.main-element{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 450px;
+    height: 450px;
+    margin: 100px;
+    gap: 2px;
+}
+
+button.cell{
+    background-color: white;
+    border: 0px;
+    height: 150px;
+}
+
+.grid .cell{
+    border: 2px solid black;
+    font-family: 'Chalkboard SE', 'Chalkboard', 'Comic Sans MS', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.utility-btns{
+    display: grid;
+    gap: 5px;
+    margin: 20px 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+button.utility{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 600;
+}
+
+button.utility:hover{
+    background-color: rgb(199, 195, 195)
+}
+
+.info{
+    display: grid;
+}
+
+.turn, .versus{
+    display: flex;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    align-content: center;
+    justify-content: center;
+    white-space: pre-line;
+    padding-top: 50px;
+}
